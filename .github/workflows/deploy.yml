@@ -23,8 +23,11 @@ jobs:
 
       - name: Inject Environment Variables
         run: |
+          sed -i 's|REPLACE_WITH_NOTION_API_KEY|${{ secrets.NOTION_API_KEY }}|' index.html
+          sed -i 's|REPLACE_WITH_DATABASE_ID|${{ secrets.DATABASE_ID }}|' index.html
           echo "NOTION_API_KEY=${{ secrets.NOTION_API_KEY }}" > .env
           echo "DATABASE_ID=${{ secrets.DATABASE_ID }}" >> .env
+          - name: Inject Environment Variables
 
       - name: Build Flutter Web
         run: flutter build web --release
@@ -32,5 +35,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: build/web
+          branch: main
+          folder: ./
