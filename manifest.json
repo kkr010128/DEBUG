@@ -1,11 +1,11 @@
 {
-    "name": "DEBUG()",
-    "short_name": "DEBUG",
+    "name": "debug",
+    "short_name": "debug",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "컴퓨터공학과 학습동아리 DEBUG()",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
