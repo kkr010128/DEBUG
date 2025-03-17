@@ -1,11 +1,11 @@
 {
-    "name": "tryCatch()",
-    "short_name": "tryCatch",
+    "name": "DEBUG",
+    "short_name": "DEBUG",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "컴퓨터공학과 학습동아리 tryCatch()",
+    "description": "컴퓨터공학과 학습동아리 DEBUG",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
